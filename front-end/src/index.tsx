@@ -17,24 +17,26 @@ const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/pawns",
+        element: <Pawns></Pawns>, 
+      },
+      {
+        path: "/knights-vs-pawns",
+        element: <div><Root></Root><div>A venir</div></div>,
+      },
+      {
+        path: "/knights",
+        element: <div><Root></Root><div>A venir</div></div>,
+      },
+      {
+        path: "/bishop-vs-pawns",
+        element: <div><Root></Root><div>A venir</div></div>
+      }
+    ],
   },
-  {
-    path: "/pawns",
-    element: <Pawns></Pawns>, 
-  },
-  {
-    path: "/knights-vs-pawns",
-    element: <div><Root></Root><div>A venir</div></div>,
-  },
-  {
-    path: "/knights",
-    element: <div><Root></Root><div>A venir</div></div>,
-  },
-  {
-    path: "/bishop-vs-pawns",
-    element: <div><Root></Root><div>A venir</div></div>
-  }
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
