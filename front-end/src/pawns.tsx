@@ -4,9 +4,6 @@ import React, { forwardRef, useEffect, useRef, useState, useMemo } from "react";
 import Root from "./routes/root";
 
 function Pawns() {
-
-
-    
     return (
       <div>
         <div style={{display: "flex", flexDirection: "row"}}>
@@ -30,7 +27,7 @@ function Pawns() {
             <div style={{width: "30rem"}}><p>Soit un pion en e4 si le roi blanc se trouve en d6 e6 ou f6 c'est gagnant.
               De même pour les autres pions sauf les pions Tour. Ceci est valable pour les pions
               de la deuxième rangée à la quatrième. Si le pion est à la cinquième rangée (par exemple
-              en e5), alors il y a <b>5</b> cases clés (dans l'exemple: d6 et f6 sont deux les deux cases qui s'ajoutent).
+              en e5), alors il y a <b>6</b> cases clés (dans l'exemple: d6, e6 et f6 sont deux les trois cases qui s'ajoutent).
 
             </p></div>
             </div>
