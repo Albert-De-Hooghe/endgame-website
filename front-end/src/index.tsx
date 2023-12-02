@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as ReactDOM from "react-dom/client";
 import {
-  createHashRouter,
+  createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
@@ -13,30 +13,28 @@ import ErrorPage from "./error-page";
 import Pawns from './pawns';
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children: [
-      {
-        path: "/pawns",
-        element: <Pawns></Pawns>, 
-      },
-      {
-        path: "/knights-vs-pawns",
-        element: <div><Root></Root><div>A venir</div></div>,
-      },
-      {
-        path: "/knights",
-        element: <div><Root></Root><div>A venir</div></div>,
-      },
-      {
-        path: "/bishop-vs-pawns",
-        element: <div><Root></Root><div>A venir</div></div>
-      }
-    ],
+    errorElement: <ErrorPage />,
   },
-  
+  {
+    path: "/pawns",
+    element: <Pawns></Pawns>, 
+  },
+  {
+    path: "/knights-vs-pawns",
+    element: <div><Root></Root><div>A venir</div></div>,
+  },
+  {
+    path: "/knights",
+    element: <div><Root></Root><div>A venir</div></div>,
+  },
+  {
+    path: "/bishop-vs-pawns",
+    element: <div><Root></Root><div>A venir</div></div>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
