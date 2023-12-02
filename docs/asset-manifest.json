@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/endgame-website/static/css/main.457f4815.css",
-    "main.js": "/endgame-website/static/js/main.b38aef09.js",
+    "main.js": "/endgame-website/static/js/main.4ef86b2b.js",
     "index.html": "/endgame-website/index.html",
     "main.457f4815.css.map": "/endgame-website/static/css/main.457f4815.css.map",
-    "main.b38aef09.js.map": "/endgame-website/static/js/main.b38aef09.js.map"
+    "main.4ef86b2b.js.map": "/endgame-website/static/js/main.4ef86b2b.js.map"
   },
   "entrypoints": [
     "static/css/main.457f4815.css",
-    "static/js/main.b38aef09.js"
+    "static/js/main.4ef86b2b.js"
   ]
 }
